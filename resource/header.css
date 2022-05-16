@@ -1,0 +1,105 @@
+/* 
+  고정을 시키는거 먼저
+*/
+.header{
+  position: fixed;
+  top : 0;
+  left : 0;
+  /* box-shadow: 0 0 3px black; */
+  border-bottom: 2px solid black;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
+/* 
+display : flex < 한줄로 서게 한다
+justify-content: space-between <일정한게 간격을 맞춘다(마치 고무줄처럼)
+align-items : 세로축 정렬를 가운데로
+*/
+
+.header_wrapper{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 
+  line-height: 라인의 높이를 정한다.
+*/
+.header_left{
+  height: 35px;
+  line-height: 35px;
+}
+
+.header_menu{
+  border: none;
+  font-size: 1.5rem;
+  display: none;
+
+}
+
+.header_title{
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+.header_center{
+  width: 50%;
+}
+
+.header_form{
+  display: flex;
+  max-width: 100%;
+}
+
+/* 
+calc < 계산해준다
+*/
+.header_input_text{
+  width: calc(100% - 70px);
+  height: 30px;
+  border-right: none;
+}
+.header_input_button{
+  width: 70px;
+  border-left: none;
+}
+
+.header_right{
+  display: flex;
+  margin-right: 10px;
+}
+
+.header_search{
+  border: none;
+  background-color: transparent;  /*투명*/
+  font-size: 1.5rem;
+  display: none;
+}
+
+.header_img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;   /* border-radius 경계선 각도*/
+  background-color: black; 
+  /* background-image: url(../../1_html/image/img01.png); */
+  /* background-size: 35px 35px; */
+}
+
+/* 
+반응형 부분 media!!!
+*/
+@media screen and (max-width:500px){
+  .header_search{
+    display: block;
+  }
+  .header_menu{
+    display: block;
+  }
+  .header_center{
+    display: none;
+  }
+  .header_title{
+    display: none;
+  }
+}

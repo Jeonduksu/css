@@ -1,0 +1,135 @@
+/* 타입선택자(태그선택자)  
+  타입선택자는 
+  타입을 선택해서 컬러를 준다
+
+*/
+
+pre {
+  text-align:center;
+}
+
+
+/* id 선택자 
+  id 선택자는
+  id를 정하고 #아이디명 하고 컬러를 준다
+
+*/
+
+#sid01 {
+  color: green;
+}
+
+#sid02 {
+  color: red;
+}
+
+#sid03 {
+  color: yellow;
+}
+
+/* class 선택자  class 찾는방법은 앞에 .을 붙인다 */
+
+.scls{
+  color: pink;
+}
+.cls {
+  background-color: blue;
+}
+
+#scls01 {
+  color: black;
+}
+
+/* 전체선택자  전체선택자는 *로 표시*/
+/* *{
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+/* 자식 선택자 */
+#did > div >p {
+  color: silver;
+}
+
+#did > p {
+  color : orange;
+}
+
+/* 인접 선택자  
+  인접한 태그를 찾아 컬러를 준다. */
+h3 + b{
+  background-color: black;
+  color: white;
+
+}
+
+span + b{
+  background-color: yellow;
+  color: brown;
+}
+
+/* 속성선택자 
+명칭된 속성을 태그[속성명] 컬러를 줄수 있다.*/
+p[title] {
+  color: skyblue;
+}
+
+p[name] {
+  color: blue;
+}
+
+p[title="b"] {
+  background-color: yellow;
+}
+
+/* 가상 클래스 선택자 
+  href -> link
+  태그 : <이걸로 명령어 줘야됨
+  방문했던 링크는 visited
+  hover 마우스커서 갔다놓으면 바뀐다
+  checked 체크박스가 체크 되었을때!
+*/
+a:link {
+  color: pink;
+  font-size: 20pt;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  background-color: purple;
+}
+
+input:checked {
+  width: 200px;
+  height: 200px;
+}
+
+/* 종속 선택자 
+  표기방법 태그.클래스명
+*/
+li.acls01{
+  background-color: green;
+}
+
+li.acls02#sidli{
+ background-color: yellow; 
+}
+
+/* 하위 선택자 */
+div span{
+  background-color: yellow;
+}
+
+/* 그룹 선택자 
+  표시명
+  태그명,태그명,태그명 {
+
+*/
+p,pre,strong{
+  color:lime;
+}

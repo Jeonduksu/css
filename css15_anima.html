@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <!-- 
+    word-wrap:break-word 삐져나오는걸 자른다
+    animation: mybox < 이코드를 적으면 keyframes에서 설정했던 내용을 불러옴
+    무한반복 돌리고싶으면
+    animation: 프레임명 시간초 infinite;<<무한
+   -->
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      font-size: 30pt;
+      background-color: red;
+      word-wrap: break-word;
+      animation: mybox 10s infinite;
+    }
+
+    /*
+    @keyframes <프레임속도 
+     */ 
+    @keyframes mybox{
+      0%{width: 150px; height: 150px; background-color: yellow; transform:translate(10px,10px);}
+
+      25%{width: 200px; height:200px; background-color: green; transform:translate(50px, 50px);}
+
+      50%{width: 250px; height: 250px; background-color: blue; transform:translate(100px,100px);}
+
+      75%{width: 300px; height: 300px; background-color: purple; transform:translate(50px,50px);}
+
+      100%{width: 200px; height: 200px; background-color: red; transform:translate(10px,10px);}
+    }
+  </style>
+</head>
+<body>
+  <h1>Animation 효과</h1>
+  <div>Animation</div>
+</body>
+</html>

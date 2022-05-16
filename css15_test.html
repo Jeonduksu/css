@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>요구사항 확인서</title>
+  <style>
+    body{
+      width: 1024px;
+    }
+    .logo{
+      float:left;
+    }
+    .login{
+      float:right;
+    }
+    .header>h1{
+      float: left;
+      margin-left: 30%;
+    }
+    .menu{
+      clear: both;
+    }
+    .menu>ul{
+      list-style:none;
+    }
+    .menu>ul>li{
+      display: inline-block;
+      margin-right: 10%;
+    }
+    .content{
+      width: 100%;
+      height: 400px;
+      background-color: lightgray;
+    }
+    .footer{
+      width: 100%;
+      height: 80px;
+      background-color: skyblue;
+      text-align: center;
+      padding-top: 3%;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+      <div class="logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAABERETz8/Ourq5AQEDd3d2lpaVJSUng4OBlZWVWVla3t7f39/c2NjbAwMDMzMzo6OiPj4+0tLSFhYV9fX0pKSlvb290dHTm5uYqKiqRkZGfn5/JycnV1dWXl5cZGRkxMTFRUVESEhIgICBgYGCBgYEVFRVXqbWuAAAEfUlEQVR4nO3Y63aiMBQFYMJVkItWRVDUitq+/xtOchJIsFBk2i5nuvb3p1lpTLIJhKhlAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAv8pljM3uK7O1+4y5/Iy+hDGvK54ym5/Ql3DG69hTZvMTdMI1L0VUKnjp8sxJfau+hE7O2OKZk/pWfQkta/m8CT1oecyyRUnFcpFlx2bGPqeKJS8u24SlX4p7c16K/zt+6JeqWRLyzx/CxOhc9Nj0Pj4cCZuaxJhByIuO7iBbPH5dM4+Ra2AFV1lMMxpeFFU/c15ctwlnrOVYVbuu4bapLdRcknXbsFiODOfoTlkeUNuDsYnteDEWhf2ravRaPRbwTfd70cWNuFRGwogXX9qEc90wsQKxmqKNa0yRHWnSr2YVrcaG9dncJWTMFvfBwkjoyYTJ1Wz0SMDOtAzB5ISL7mUSn5Jret2901+x0MHwcN2ErO5PWMguzzLoI6tIDbdxvFcd7+O4UDMcTpg4iVj6W+I4VptwRzN1kqTcqsFpzmtxw4Zn1RctatE7HLWugiDYp1QT9yYUNXPqUnT1Ph7wSMOIEt3z7CCKJ1FafJLQMvdSldBXSyGIKdqqc1lDvYefDufo1uKYxNK+hKGoocfWqt7znDmjCamvpJ3WjkqJqFxNTFgZrbO39ZrvS8vADVayxpcJjeHEbuXp4WKZUO3C1Fk5lPA2Gsuw4h84W+2c1flShHUnJhS3Zj44TigTruTaCGLL2cri9UNCFfpjQvoHu9yCcEpCNeQLoxdC09vUhDPWs7ctT5tC2EQ6of0h4e5DQuot6HsO2xfSpT6V98P9bMKUqZeG4W7nHEqYf0wYDSVMPKPDW2KN+t6EdbfzYzfglIS3oYT8Id/qHocfi8kJbw/dpWm3c3oPrFfCaWLCfDgh57vNwSG2xowmLHXNfnSnaV5PJT838i39Ii8LzWlaQtqYFp2E4vWXGTMPKeTblxLSviXfcI4qjr0tfD37V/l2Psia47SEdGhy5HU56kt0sKooipofFMQWvPlSQloDOUCkSjrhSztXlZAue6Rns5EJ1Rlg0hoea9UX3UVn8VZ3Upl5L/shYnqnryWkh4fZdS3vectMSEtWBK4+tdmiZhbErjyG+fLhZW7JLbMHE+449YiJ50MegOtafpm5qSt1OWWHg1vrBf7rhFYzGGvuN53Ql5WeTrg0G9Ptk7GuBxJqtPjdPks1S207GvD+TPPWTejUujPatVw9w8JMSK+J0HhVyY6Mb2Yyocuao9rAmaalfqD09UXO5XpVd5dxTJbanjrmVZ7tqds68uxU7sNZ4Z3zPL1VcguIefPmuq0ie3bj3yBWvE49/NnGTnnr+qU5U2VbW0tLGk799rHnw6lbZs6Hy2RCajiLKn2iXkXpLs+9aNVUJMGW5jTfP3xy+0cY3y1+qc4b/1dCwv8fEv7/HK+uvV+dEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7zB3JdPoW1WY29AAAAAElFTkSuQmCC" width="100px" height="100px">
+      </div>
+      <h1>MYMain</h1>
+
+      <div class="login">
+        <table>
+          <tr>
+            <td>아이디</td>
+            <td><input type="text" name="id"></td>
+          </tr>
+          <tr>
+            <td>패스워드</td>
+            <td><input type="password" name="pw"></td>
+          </tr>
+          <tr>
+            <td colsapn="2">
+              <input type="submit" value="로그인">
+              <input type="reset" value="취소">
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>메인</li>
+          <li>공지사항</li>
+          <li>자유게시판</li>
+          <li>갤러리</li>
+          <li>회원관리</li>
+          <li>채팅하기</li>
+        </ul>
+      </div>
+    <div class="content">content내용</div>
+    <div class="footer">
+      <p>Copyright 1998-2019 multi Information Educatinoal ~~ All Right Reserved</p>
+    </div>
+</body>
+</html>

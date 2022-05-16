@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <!-- 
+    static : 위에서 아래로 (블럭요소랑 비슷하다)
+    relative : 원래위치에서 이동(상대적 위치)
+    ex) position : relative
+        left : 30px;  왼쪽에서 이동
+        top : -30px:        -:위로 +(생략가능):아래로
+    absolute : 기준점에서 이동 기준점은 ex)기준점: box
+                                          부모 기준 , 바디 기준
+    fixed : 고정
+   -->
+   <!-- 
+     position은 문서 상에 요소를 배치하는 방법을 지정
+     1) static : 그냥 원래있던 위치 그대로 
+                요소를 일반적인 문서 흐름에 따라 배치
+                top,right,bottom,left,z-index 속성이 아무런 영향도 주지 않는다
+     2) relative : 원래 위치에서 이동
+                  top,bottom,left,right 를 줘서 이동할수있다
+     3)absolute : 해당 요소는 배치 기준을 자신이 아닌 상위 요소를 찾는다
+                  position:static인걸 먼저 찾고 없으면 body가 기준점이 된다
+     4)fiexd : 고정
+  
+
+
+
+
+
+    -->
+   <style>
+     #box{
+       width: 550px; 
+       border: 1px dotted red; 
+       position : relative;
+     }
+     p{
+      width: 130px;
+      height: 100px;
+     }
+     .myred{
+       background-color: red;
+       position: relative;
+       top: 50px;
+       z-index: 2;
+     }
+     .myblue{
+       background-color: blue;
+       position:absolute;
+       top: 30px;
+       left: 100px;
+     }
+     .mygreen{
+       background-color: green;
+       position: relative;
+       left: 30px;
+       top: -30px;
+     }
+
+     .myred:hover{ z-index: 100; }
+     .myblue:hover{ z-index: 100;}
+     .mygreen:hover{ z-index: 100; }
+
+     #fixed{
+       width: 100px;
+       height: 200px;
+       background-color: black;
+       color: white;
+       position: fixed;
+       right: 50px;
+       top : 100px;
+     }
+
+   </style>
+</head>
+<body>
+  <div id="box">
+    <p class="myred"></p>
+    <p class="myblue"></p>
+    <p class="mygreen"></p>
+  </div>
+  <div id="fixed">
+    fixed!!!!!
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
