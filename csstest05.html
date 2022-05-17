@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미디어쿼리 연습</title>
+  <style>
+    img{
+      width:200px;
+    }
+
+    /* 
+    and 하고 띄우는거 제일 중요!!!!!
+    */
+    @media screen and (min-width:800px) {
+      img {
+        width: 500px;
+        height: 400px;
+      }
+    }
+
+    @media screen and (min-width:1000px) {
+      img {
+        width: 800px;
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="../1_html/image/img03.png">
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform 복습</title>
+  <link href="resource/cstest02.css" rel="stylesheet">
+  <style>
+    .cls+p{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border: 1px solid black;
+      text-align:center;
+      font-size:20pt;
+      color: white;
+    }
+
+    .header{
+      width: 200px;
+      height: 40px;
+      background-color: pink;
+      color: black;
+      margin-bottom: 3px;
+      transition: width 3s, color 3s, letter-spacing 4s;
+    }
+
+    .header:hover{
+      width: 400px;
+      color: white;
+      letter-spacing: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- 위치이동 -->
+  <h2>transform - translate</h2>
+  <div class="cls late">translate(x,y)위치이동</div>
+  <!-- 회전 -->
+  <h2>transform - rotate</h2>
+  <div class="cls rotate">rotate(deg) : 회전</div>
+  <!-- 크기 -->
+  <h2>transform - scale</h2>
+  <div class="cls scale">scale(x,y):크기</div>
+  <h2>transition 연습하기</h2>
+  <p>아래 박스는 width,height,background-color, transform 을 위한 트랜지션을 결합</p>
+  <div class="box"></div>
+
+  
+    <h2>Mainmenu</h2>
+    <div class="header"> 
+    <p><b>COMPANY</b></p>
+    <br>
+    <p><b>PRODUCT</b></p>
+    <Br>
+    <p><b>SERVICE</b></p>
+    <Br>
+    <p><b>COMMUNITY</b></p>
+    <br>
+    <p><b>CUSTOMER SUPPORT</b></p>
+  </div>
+
+  <br><br><br><br><Br><br><br><br><br><br><br>
+  <br><br><br><br><Br><br><br><br><br><br><br>
+  <br><br><br><br><Br><br><br><br><br><br><br>
+  <br><br><br><br><Br><br><br><br><br><br><br>
+  <br><br><br><br><Br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin,padding</title>
+  <style>
+    .main{
+      position : relative;
+      width: 300px;
+      height: 300px;
+      background-color: orange;
+    }
+    .a{
+      width: 200px;
+      height: 100px;
+      background-color: yellow;
+      border:1px solid black;
+      text-align: center;   
+      position: relative;
+      top: 30px;
+      left: 20px; 
+    }
+    .b{
+      width: 200px;
+      height: 100px;
+      background-color: green;
+      border:1px solid black;
+      text-align: center;    
+    }
+    .c{
+      position : absolute;
+      top : 30px;
+      left: 100px;
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="a">
+      position: static;
+    </div>
+    <div class="b">
+      position: static;
+    </div>
+    <div class="c">
+      position: absolute;
+    </div>
+  </div>
+</body>
+</html>

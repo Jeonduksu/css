@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation 연습하기</title>
+  <style>
+    .box{
+      width:200px;
+      height: 200px;
+      background-color: pink;
+      font-weight: bold;
+      text-align: center;
+      padding: 30px;
+      letter-spacing: 5px;
+      animation: mybox 3s;
+    }
+
+    @keyframes mybox{
+      0%{width: 400px; height: 250px; background-color: red; transform:rotate(30deg);}
+
+      50%{width: 600px; height: 300px; background-color: blue; transform:translate(300px,300px);}
+
+      100%{width: 800px; height: 400px; background-color: brown; transform:translate(500px,500px);}
+    }
+
+    
+  </style>
+</head>
+<body>
+  <h2><b>animation</b></h2>
+  <div class="box">animation</div>
+</body>
+</html>

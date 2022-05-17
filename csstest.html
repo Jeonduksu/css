@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css 복습하기</title>
+  <!-- link 작성법 -->
+  <!-- rel은 관계를 뜻하며, 현재 문서와 연결한 아이템의 관계가  어떻게 되는지 설명
+    link태그에서 rel은 제일 중요한 기능 중 하나
+  -->
+  <!-- link href(경로)= "경로위치" rel="stylesheet"--> 
+  <link href="resource/csstest.css" rel="stylesheet" type="text/css">
+  <style>
+  p{
+    background-color: aqua;
+  }
+  </style>
+</head>
+<body>
+  <h1>css 기본 문법 3가지</h1>
+  <ol>
+  <li style="color: red;"> 인라인 스타일리스트</li>
+  <li><p> 내부 스타일리스트</p></li>
+  <!-- 
+    내부 스타일은
+    title 밑에다가 style 을 적용
+   -->
+  <li><b> 외부 스타일리스트</b></li>
+  <!-- 외부 스타일리스트는 
+    css파일을 따로 하나 만들어 작성
+    대신 조건이 있음
+    link 라는 태그를 통해 css파일과 연동 시켜줘야됨
+  -->
+  </ol>
+
+  <br>
+  <strong>선택자 연습</strong>
+  <div>
+  <p>타입 선택자</p>
+  <pre>태그 이름을 지정하여 선언</pre>
+  </div>
+  
+  <div>
+    <h4 id="idtest">id 선택자</h4>
+  </div>
+  
+  <div>
+    <h3 class="classtest">class선택자</h3>
+  </div>
+
+  <div>
+    <h3>전체 선택자</h3>
+    <!-- 
+      선택자 줄때 *로 표시
+     -->
+  </div>
+
+  <div id="did">
+    <h3>자식 선택자</h3>
+    <!-- 
+      자식 선택자 줄때는 >로 표시
+     -->
+    <div>
+      <p>자식 1</p>
+    </div>
+  </div>
+
+  <div>
+    <h3>인접선택자</h3>
+    <!-- 인접 선택자는 + 로 표시 -->
+  </div>
+
+  <div>
+    <h3>속성 선택자</h3>
+    <!-- 속성 선택자는 태그[속성명] 로 표시-->
+  </div>
+
+  <div>
+    <h3>가상 클래스 선택자</h3>
+    <!-- 가상 클래스는 태그: 로 표시 -->
+  </div>
+
+  <div>
+    <h3>종속 선택자</h3>
+    <!-- 종속은 id선택자와 클래스 선택자를 혼합한 선택자라고 생각
+        종속 선택자는 태그. 로 표시
+    -->
+  </div>
+
+  <div>
+    <h3>하위 선택자</h3>
+    <!-- 
+      태그 하위태그명 로 표시
+     -->
+  </div>
+
+  <div>
+    <h3>그룹 선택자</h3>
+    <!-- 
+      태그명,태그명,태그명 로 표시
+     -->
+  </div>
+</body>
+</html>
